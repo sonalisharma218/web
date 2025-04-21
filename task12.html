@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore the Wild</title>
+  <style>
+    /* Base styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: light blue;
+      color: black;
+    }
+
+    header {
+      background: url('wild.jfif') center/cover no-repeat;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: blue;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px 20px;
+    }
+
+    nav a:hover {
+      background-color: dark blue;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      width: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px;
+      color: dark red;
+    }
+
+    .card p {
+      margin: 10px;
+      font-size: 14px;
+    }
+
+    .card button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: dark blue;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: sky blue;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: dark gray;
+      color: white;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        display: block;
+        border-bottom: 1px solid sky blue;
+      }
+
+      header h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore the Wild</h1>
+    <p>Discover beautiful mountains and epic treks around the world</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Treks</a>
+    <a href="#">Mountains</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="content">
+    <div class="card">
+      <img src="HIMALAYA.jfif" alt="Himalayas">
+      <h3>Himalayas</h3>
+      <p>Explore the highest mountain range in the world, home to Everest and serene valleys.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="swiss.jfif" alt="Alps">
+      <h3>Swiss Alps</h3>
+      <p>Snow-capped peaks, charming villages and crystal-clear lakes await you in the Alps.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="ROCKY.jfif" alt="Rocky Mountains">
+      <h3>Rocky Mountains</h3>
+      <p>Perfect for adventure lovers, with vast trails, wildlife, and stunning views.</p>
+      <button>Learn More</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Explore the Wild | Created with HTML & CSS only
+  </footer>
+
+</body>
+</html>
