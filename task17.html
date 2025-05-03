@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Exception Handling</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      padding: 30px;
+    }
+    .slide {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px;
+    }
+    .bar {
+      background-color: pink;
+      color: white;
+      padding: 12px 20px;
+      font-size: 22px;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 20px;
+    }
+    code {
+      background-color: gray;
+      display: block;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bar">JavaScript Exception Handling Programs</div>
+
+    <b>1. Handle Exception for Undeclared Variable</b><br>
+    <code>
+      try {<br>
+        console.log(x); // x is not declared<br>
+      } catch (e) {<br>
+        console.log("Error caught:", e.message);<br>
+      }
+    </code><br>
+
+    <b>2. Throw "Divide by Zero" Error</b><br>
+    <code>
+      function divide(a, b) {<br>
+        if (b === 0) {<br>
+          throw new Error("Divide by Zero");<br>
+        }<br>
+        return a / b;<br>
+      }<br>
+      try {<br>
+        console.log(divide(10, 0));<br>
+      } catch (e) {<br>
+        console.log("Error:", e.message);<br>
+      }
+    </code><br>
+
+    <b>3. Throw "Out of Bound" Error for Array</b><br>
+    <code>
+      let arr = [1, 2, 3];<br>
+      try {<br>
+        if (arr[5] === undefined) {<br>
+          throw new Error("Out of Bound Error");<br>
+        }<br>
+        console.log(arr[5]);<br>
+      } catch (e) {<br>
+        console.log("Error:", e.message);<br>
+      }
+    </code><br>
+
+    <b>4. Exception Handling with finally Statement</b><br>
+    <code>
+      try {<br>
+        let result = 10 / 2;<br>
+        console.log("Result:", result);<br>
+      } catch (e) {<br>
+        console.log("Error:", e.message);<br>
+      } finally {<br>
+        console.log("Finally block executed");<br>
+      }
+    </code>
+
+  </div>
+</body>
+</html>
