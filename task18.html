@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SQL Queries Slide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 30px;
+    }
+    .slide {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .bar {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      font-size: 22px;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 20px;
+    }
+    code {
+      background-color: #f1f1f1;
+      display: block;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bar">SQL Query Examples</div>
+
+    <b>1. Create a Database Named "library"</b><br>
+    <code>
+      CREATE DATABASE library;
+    </code><br>
+
+    <b>2. Delete the "library" Database</b><br>
+    <code>
+      DROP DATABASE library;
+    </code><br>
+
+    <b>3. Create a Table "book_records"</b><br>
+    <code>
+      CREATE TABLE book_records (<br>
+        Book_Library_No INT PRIMARY KEY,<br>
+        Book_Name VARCHAR(100),<br>
+        Author_Name VARCHAR(100),<br>
+        Book_Edition VARCHAR(50),<br>
+        Price DECIMAL(10,2)<br>
+      );
+    </code><br>
+
+    <b>4. Delete the "book_records" Table</b><br>
+    <code>
+      DROP TABLE book_records;
+    </code>
+
+  </div>
+</body>
+</html>
